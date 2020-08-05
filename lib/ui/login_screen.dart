@@ -22,13 +22,14 @@ class LoginScreen extends StatelessWidget {
             SizedBox(
               width: MediaQuery.of(context).size.width / 1.5,
               child: TextField( decoration: InputDecoration(
-                  hintText: "Username"
+                  hintText: "Mail"
               ),),
             ),
             SizedBox(
               width: MediaQuery.of(context).size.width / 1.5,
-              child: TextField( decoration: InputDecoration(
-                  hintText: "Password"
+              child:
+              TextField( decoration: InputDecoration(
+                  hintText: "Phone Number"
               ),),
             ),
             SizedBox(
@@ -39,7 +40,10 @@ class LoginScreen extends StatelessWidget {
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(builder: (_)=> page),
               );
-            }, child: Text("ENTER"),)
+            }, child: Text("Continue"),),
+            SizedBox(height: 50,),
+            Text("Si ingresas tus datos, te enviaré mi CV.\n "),
+            Text("Gracias ")
           ],
         ),
       ),
