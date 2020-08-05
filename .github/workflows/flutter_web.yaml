@@ -3,11 +3,11 @@ name: Flutter Web
 on:
   push:
     branches:
-      -master
+      - master
 
 jobs:
   build:
-    run-on: ubuntu-lastest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
